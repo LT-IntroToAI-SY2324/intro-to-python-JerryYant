@@ -13,11 +13,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+More simple and less tedious than java
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-
+Some similar things are things like variables and some commands, while some differences are things such as not needing to initialize comaands like strings or ints.
 
 
 3. What are some things that you learned through this assignment?
+time it takes to process the code and the differences between java and python.
