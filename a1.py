@@ -26,6 +26,7 @@ def absolute(n: int) -> int:
         the absolute value of the passed in number
     """
     n = abs(n)
+    return n
     raise NotImplementedError("absolute")
 
 
