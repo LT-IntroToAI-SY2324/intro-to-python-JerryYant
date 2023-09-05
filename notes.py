@@ -96,7 +96,7 @@ print(dinner)
 
 # f String
 age = 25
-# print("Mary is " + age + " years old")
-print(f"Mary is {age} years old")
+print("Mary is {age} years old")
+str = f"Mary is {age} years old"
 
 
