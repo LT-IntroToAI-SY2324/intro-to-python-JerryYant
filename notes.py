@@ -56,6 +56,7 @@ def add_two(n: int):
     """
     return n + 2
 
+print(add_two(5))
 assert add_two(5) == 7, "add_two with input 5 test"
 assert add_two(-2) == 0, "add_two with input -2 test"
 assert add_two(0) == 2, "add_two with input 0 test"
