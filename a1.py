@@ -39,7 +39,10 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    fact = 1
+    for num in range(2, n+1):
+        fact *= num
+    return fact
 
 
 T = TypeVar("T")
