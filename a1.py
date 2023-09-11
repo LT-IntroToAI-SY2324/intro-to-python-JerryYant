@@ -93,7 +93,7 @@ def mean(lst: List[int]) -> float:
     for el in list:
         c += 1
     m = sum_list(lst)/c
-    return 
+    return m
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
