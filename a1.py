@@ -80,7 +80,6 @@ def sum_list(lst: List[int]) -> int:
     return s
 
 
-
 def mean(lst: List[int]) -> float:
     """Takes a list of numbers, and returns the mean of the numbers.
 
@@ -90,8 +89,11 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
-
+    c = 1
+    for el in list:
+        c += 1
+    m = sum_list(lst)/c
+    return 
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
