@@ -25,9 +25,11 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
+    if n < 0:
+        return -n
+    else:
+        return n
     
-    return -1*n if n < 0 else n 
-
 
 def factorial(n: int) -> int:
     """Takes a number n, and computes the factorial n! You can assume the passed in
@@ -60,13 +62,7 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    def altElement(a):
-        T = []
-        for i in a:
-            T.append(a)
-
-    return T
-
+    return lst[::2]
 
 def sum_list(lst: List[int]) -> int:
     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
@@ -78,7 +74,11 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    s = 0
+    for el in lst:
+        s += el
+    return s
+
 
 
 def mean(lst: List[int]) -> float:
