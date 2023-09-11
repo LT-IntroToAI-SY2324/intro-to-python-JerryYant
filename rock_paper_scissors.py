@@ -10,8 +10,6 @@ def get_choices():
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
 
-    return choices
-
 def check_winner (player, computer):
     print(f"you chose {player}, computer chose {computer}")
     if player == computer:
