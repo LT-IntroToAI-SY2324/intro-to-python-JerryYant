@@ -39,10 +39,11 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    fact = 1
-    for num in range(2, n+1):
-        fact *= num
-    return fact
+    #4! = 4*3*2*1 or 1*2*3*4
+    result = 1
+    for x in range(1, n+1):
+        result *= x
+    return result
 
 
 T = TypeVar("T")
