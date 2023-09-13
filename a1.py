@@ -89,10 +89,10 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    c = 1
-    for el in list:
-        c += 1
-    m = sum_list(lst)/c
+    
+    if len(lst) == 0:
+        return 0
+    m = sum_list(lst)/ len(lst)
     return m
 
 def median(lst: List[int]) -> float:
@@ -133,9 +133,24 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    import random
-    n = random.randint()
-    duck = lst
+    i = 0
+    current = "duck1"
+    while len(lst) > 2:
+        if current == "duck1":
+           current = "duck2"
+           i =+ 1
+        elif current == "duck2":
+            current = "goose"
+            i += 1
+        else: # current == "goose"
+            current = "duck1"
+            lst = lst[:i] + lst[i+1:] # or lst.pop(i)
+# check to see if we are at the end of the list
+        if i >= len(lst):
+            i -=len(lst)
+    # alternate using mod: i %= len(lst)
+    return lst
+
     
 
 # this line causes the nested code to be skipped if the file is imported instead of run
